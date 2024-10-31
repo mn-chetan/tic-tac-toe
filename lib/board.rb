@@ -9,7 +9,7 @@ class Board
         puts
         puts '-----------'
       end
-      print "#{i + 1} | "
+      print "#{game_board[i]} | "
     end
     puts
   end

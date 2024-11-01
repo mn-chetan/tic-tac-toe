@@ -1,4 +1,5 @@
 class Result
+  # rubocop:disable Metrics/MethodLength
   def self.game_won?(game_board)
     # Winning combinations
     winning_combinations = [
@@ -7,6 +8,7 @@ class Result
       [0, 4, 8], [2, 4, 6]             # Diagonal
     ]
 
+    # rubocop:enable Metrics/MethodLength
     # Check each winning combination
     winning_combinations.each do |combo|
       if game_board[combo[0]] == game_board[combo[1]] && game_board[combo[1]] == game_board[combo[2]]
